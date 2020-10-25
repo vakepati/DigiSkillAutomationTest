@@ -27,31 +27,11 @@ public class CarTaxCheckLandingPage {
     @FindBy(xpath = "//button[text()='Free Car Check']")
     private WebElement freeCheck;
 
-//    @FindBy(xpath = "//*[contains(text(),'Registration')]/parent::*/dd")
-//    private WebElement registrationNumber;
-//
-//    @FindBy(xpath = "//*[contains(text(),'Make')]/parent::*/dd")
-//    private WebElement make;
-//
-//    @FindBy(xpath = "//*[contains(text(),'Model')]/parent::*/dd")
-//    private WebElement modle;
-//
-//    @FindBy(xpath = "//*[contains(text(),'Colour')]/parent::*/dd")
-//    private WebElement colour;
-//
-//    @FindBy(xpath = "//*[contains(text(),'Year')]/parent::*/dd")
-//    private WebElement year;
-
 
     public void enterCarRegistrationNumber(String regNumber) throws InterruptedException {
         vrmInputTextBox.clear();
         vrmInputTextBox.sendKeys(regNumber);
         freeCheck.click();
-
-//        WaitTillElementPresent(make);
-//
-//
-//        System.out.println("printing reg number..."+ make.getText());
     }
 
     private void WaitTillElementPresent(WebElement webElement) {
@@ -62,8 +42,5 @@ public class CarTaxCheckLandingPage {
     public void openCarTaxWebSite(){
         driver.navigate().to("https://cartaxcheck.co.uk/");
     }
-//    public FullVehicleDetailsPage submit() {
-//        freeCheck.click();
-//        return new FullVehicleDetailsPage(driver);
-//    }
+
 }
