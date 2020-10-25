@@ -1,0 +1,105 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Verify Vehicle details",
+        "description": "",
+        "id": "car-details-check-feature;verify-vehicle-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 285648940,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestStepDefinitions.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4425663363,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have list of Car Registration Numbers in the \"src/test/resources/testdata/car_input.txt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/resources/testdata/car_input.txt",
+                  "offset": 48
+                }
+              ],
+              "location": "TestStepDefinitions.vehicleDetailsAreThereInThe(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 386348726,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have expected car details are there in the \"src/test/resources/testdata/car_output.txt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src/test/resources/testdata/car_output.txt",
+                  "offset": 46
+                }
+              ],
+              "location": "TestStepDefinitions.vehicleDetailsAreVerifiedOnTheCartaxCheckWebsite(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2385355974,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I check car details in the cartax check website",
+            "match": {
+              "location": "TestStepDefinitions.navigateCarCheckSite()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5177664256,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Actual vehicle details are verified with expected details",
+            "match": {
+              "location": "TestStepDefinitions.vehicleDetailsShouldMatchTheDetailsInThe()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Car Details Check feature",
+    "description": "",
+    "id": "car-details-check-feature",
+    "keyword": "Feature",
+    "uri": "Assignment.feature"
+  }
+]
