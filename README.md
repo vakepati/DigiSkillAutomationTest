@@ -29,7 +29,7 @@
 `mvn clean test`
 
 ### Reports location
-* Repors are placed under target/site/cucumber-pretty/index.html
+* Reports are placed under target/site/cucumber-pretty/index.html
 
 
 
